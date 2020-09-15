@@ -1,5 +1,4 @@
 use rand::Rng;
-use std::cmp::Ordering;
 use std::io;
 
 fn main() {
@@ -21,11 +20,11 @@ fn main() {
             Err(_) => continue,
         };
 
-        if(guess < num) {
+        if guess < num {
             println!("\ntoo small idiot\n")
-        } else if(guess > num) {
+        } else if guess > num {
             println!("\ntoo large idiot\n")
-        } else if(guess == num) {
+        } else if guess == num {
             println!("\nwow u did it\n");
             break;
         }
